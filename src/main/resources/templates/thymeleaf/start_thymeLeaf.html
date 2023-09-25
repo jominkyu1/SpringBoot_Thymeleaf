@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="/css/th.css">
+</head>
+<body>
+  <h1>Thymeleaf 연습 페이지</h1>
+  <h2 class="thymeleaf_css" th:text="${greeting}">greeting</h2>
+  <hr>
+  <!--/* ${greeting}은 SampleController.java에서 설정한 키 이름 */-->
+  <h3>맛있는 과일</h3>
+  <img src="/images/fruit01.jpg" width="200px" height="150px" alt="과일">
+
+</body>
+</html>

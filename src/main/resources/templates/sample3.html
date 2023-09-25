@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <div th:each="item : ${list}">
+    <h3 th:text="${item.mname} + ' ::: ' + ${#dates.format(item.regdate, 'yyyy년 MM월 dd일 hh시 mm분')}"></h3>
+  </div>
+</body>
+</html>

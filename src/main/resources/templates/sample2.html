@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <th:block th:object="${vo}">
+    <h1 th:text="|이름: *{mname}|"></h1>
+    <h2 th:text="|생성일자: *{regdate}|"></h2>
+    <div th:utext="${'<h2>' + vo.mid + '</h2>'}"></div>
+    <hr>
+  </th:block>
+</body>
+</html>
